@@ -3,6 +3,9 @@
 Decision Relevant Climate Data Products serving a broad and growing climate impacts and mitigation community.
 
 ### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
+It will be used to document the status of the project, include guidance for dataset contributors, and manage critical metadata used to describe and deliver DRCDP datasets.   
+
+
 
 ## Contributors
 
