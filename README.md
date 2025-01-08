@@ -5,11 +5,9 @@ Decision Relevant Climate Data Products serving a broad and growing climate impa
 ### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
 It will be used to document the status of the project, include guidance for dataset contributors, and manage critical metadata used to describe and deliver DRCDP datasets.   
 
-
-
 ## Contributors
 
-[![Contributors](https://contrib.rocks/image?repo=PCMDI/DRCDP)](https://github.com/PCMDI/DRDCP/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=PCMDI/DRCDP)](https://github.com/PCMDI/DRCDP/graphs/contributors)
 
 Thanks to our contributors!
 
