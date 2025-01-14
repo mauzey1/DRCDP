@@ -7,7 +7,7 @@ Data specifications have been established for DRCDP datasets that are technicall
 
 ### Nuts and bolts:
 
-- Contributors must register their datasets by submitting an issue on the DRCDP GitHub repository and filling out the provided template.  
+- Contributors must register their datasets by submitting an issue on this DRCDP GitHub repository and filling out the provided template.  
 
 - We recommend data providers prepare their data using Python so that they can more readily leverage the resources described below
 
