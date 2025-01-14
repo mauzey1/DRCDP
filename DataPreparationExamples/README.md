@@ -20,7 +20,7 @@ Xarray, XCDAT and CMOR can be obtained via conda-forge, a community-led collecti
 
 The recipe below describes the process of preparing a DRCDP-compliant dataset. This typically involves copying information from the provided demo and modifying it as necessary to prepare a new DRCDP-compliant dataset. By preparing a simple python script (example discussed in demo identified below) and an input JSON file, CMOR is used to prepare an DRCDP-compliant dataset.
 
-Recipe
+### Recipe
 
 Register a new source_id, if it does not already exist.  An issue can be submitted on this GitHub repo with a proposed "source_id" and other key registered content (RC). Somebody will quickly review this information and enter it into the database of source_id's or propose an alternative if it does not conform to the data specifications for the source_id. When opening an issue, a template is provided, so one needs to replace the information in the example (GPCP) with their own proposed source_id. The source_id is intended to identify the product/version and generally closely resembles an existing identifier but may be slightly modified to be consistent with CMIP/obs4MIPs conventions. For example: A compliant source_id for "GPCP 2.4" is "GPCP-2-4". More information on the guidelines for constructing a source_id is available in Table 1 of the obs4MIPs data specifications. 
 
