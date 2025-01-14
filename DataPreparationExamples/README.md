@@ -1,6 +1,3 @@
-# Decision Relevant Climate Data Products (DRCDP)
-
-
 ## Preparing DRCDP data for publication to ESGF
 
 Data specifications have been established for DRCDP datasets that are technically aligned with other ESGF projects including CMIP, CORDEX, and obs4MIPs.  Here, we provide guidance to help data providers make their data compliant with these data specifications.  
