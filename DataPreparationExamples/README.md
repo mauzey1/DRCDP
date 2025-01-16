@@ -15,7 +15,7 @@ Xarray, XCDAT and CMOR can be obtained via conda-forge, a community-led collecti
 
 ## How to:  
 
-The recipe below describes the process of preparing a DRCDP-compliant dataset. This typically involves copying information from the provided demo and modifying it as necessary to prepare a new DRCDP-compliant dataset. By preparing a simple python script (example discussed in demo identified below) and an input JSON file, CMOR is used to prepare an DRCDP-compliant dataset.
+The recipe below describes the process of preparing a DRCDP-compliant dataset. This typically involves copying information from the provided demos and modifying it as necessary to prepare a new DRCDP-compliant dataset. By preparing a simple python script (example discussed in demo identified below) and an input JSON file, CMOR is used to prepare an DRCDP-compliant dataset.
 
 ### Recipe
 
