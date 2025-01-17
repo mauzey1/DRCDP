@@ -11,7 +11,7 @@ It will be used to document the status of the project, include guidance for data
 
 Thanks to our contributors!
 
-## Acknowledgement
+## Acknowledgment
 
 The repository content has been collected from many contributors. The structure of content and tools required to maintain it was developed by climate and computer scientists from the Program for Climate Model Diagnosis and Intercomparison ([PCMDI](https://pcmdi.llnl.gov/)) at Lawrence Livermore National Laboratory ([LLNL](https://www.llnl.gov/)).
 
@@ -35,4 +35,5 @@ This work is sponsored by the Regional and Global Model Analysis ([RGMA](https:/
          style="margin-right: 30px"
          title="Lawrence Livermore National Laboratory"
          alt="Lawrence Livermore National Laboratory"
+    >
 </p>
