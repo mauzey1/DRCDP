@@ -12,7 +12,7 @@
 
 - Use of the [Climate Model Output Writer (CMOR)](https://cmor.llnl.gov/) is required to ensure alignment with other ESGF projects.
      
-[Xarray](https://anaconda.org/conda-forge/xarray), xCDAT and CMOR can be obtained via conda-forge (see [here](https://anaconda.org/conda-forge/xarray), [here](https://anaconda.org/conda-forge/xcdat) and [here](https://anaconda.org/conda-forge/cmor)), using a community-led collection of recipes, build infrastructure and distributions used and available from the conda package manager.
+Via the [conda package manager](https://docs.conda.io/en/latest/), [Xarray](https://anaconda.org/conda-forge/xarray), [xCDAT](https://anaconda.org/conda-forge/xcdat) and [CMOR](https://anaconda.org/conda-forge/cmor) can be obtained and included in a common environment. 
 
 ## How to:  
 
