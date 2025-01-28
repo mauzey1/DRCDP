@@ -16,6 +16,14 @@
                 "north_america"
             ]
         },
+        "MACAV3": {
+            "source_name": "MACA",
+            "source_version_number": "V3",
+            "institution_id": "UCM-ACSL",
+            "region": [
+                "north_america"
+            ]
+        },
         "STAR-ESDM-v1": {
             "source_name": "STAR-ESDM",
             "source_version_number": "v1",
