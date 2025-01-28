@@ -1,6 +1,7 @@
 ## Preparing DRCDP data for publication to ESGF (WORK-IN-PROGRESS DRAFT!)
 
-[DRCDP](https://aims2.llnl.gov/search/DRCDP) data specifications have been established for data technically aligned with other ESGF projects including [CMIP](https://aims2.llnl.gov/search/CMIP6), [CORDEX](https://esgf-node.ipsl.upmc.fr/search/cordex-ipsl/), and [obs4MIPs](https://aims2.llnl.gov/search/obs4MIPs). Here, we provide guidance to help data providers generate compliant data using these specifications.  
+Draft [DRCDP](https://docs.google.com/document/d/1CEhmrHD9D0fq98UlcPus8V0Vf9paB5M4/edit) data specifications have been established for data technically aligned with other ESGF projects including [CMIP](https://zenodo.org/records/12768887), [CORDEX](https://zenodo.org/records/10961069), and [obs4MIPs](https://zenodo.org/records/11500474). Data for these projects is available on ESGF ([DRCDP](https://aims2.llnl.gov/search/DRCDP), [CMIP](https://aims2.llnl.gov/search/CMIP6), [CORDEX](https://esgf-node.ipsl.upmc.fr/search/cordex-ipsl/), and [obs4MIPs](https://aims2.llnl.gov/search/obs4MIPs). Here, we provide guidance to help data providers generate compliant data using these specifications.  
+
 
 ### Nuts and bolts:
 
