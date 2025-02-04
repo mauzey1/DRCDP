@@ -21,7 +21,7 @@ if vr == 'pr':
  inputVarName = 'pr'
  outputVarName = 'pr'
  outputUnits = 'kg m-2 s-1'
-
+ units_conv = 86400. 
 if vr == 'tasmax':
    inputVarName = 'tasmax'
    outputVarName = 'tasmax'
@@ -74,6 +74,7 @@ for mod in mods:
      time = f.time.values  
      tunits = "days since 1950-01-01"
      if vr in ['tasmin','tasmax']: d = np.add(d,units_conv)
+     if vr in ['pr']: d = np.divide(d,units_conv)
 
      f = f.bounds.add_bounds("X") 
      f = f.bounds.add_bounds("Y")
@@ -89,6 +90,8 @@ for mod in mods:
      cmor.set_cur_dataset_attribute("driving_source_id",mod)
      cmor.set_cur_dataset_attribute("driving_variant_label",ri)
      cmor.set_cur_dataset_attribute("driving_experiment_id",exp)
+     if expi in ['historical']: cmor.set_cur_dataset_attribute("driving_activity_id",'CMIP') 
+     if expi in ['ssp245','ssp585']: cmor.set_cur_dataset_attribute("driving_activity_id",'ScenarioMIP') 
 
      time_np = cftime.date2num(time,tunits)
      time_np = np.array(time_np[:],np.float32)  #time_np.astype(np.float32)  

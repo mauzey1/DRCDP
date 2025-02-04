@@ -12,6 +12,3 @@ python STAR-ESDM_CMIP6_runCMOR.py historical tasmin NorESM2-MM
 python STAR-ESDM_CMIP6_runCMOR.py historical tasmin MRI-ESM2-0 
 python STAR-ESDM_CMIP6_runCMOR.py historical tasmin NESM3 
 python STAR-ESDM_CMIP6_runCMOR.py historical tasmin CMCC-ESM2 
-
-
-
