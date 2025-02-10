@@ -9,13 +9,15 @@ from datetime import datetime
 cmorTable = '../Tables/obs4MIPs_Aday.json'
 inputJson = 'STAR-ESDM_CMIP6_input.json'
 
-multi  = True
+multi  = False #True
 if multi == True:
  expi = sys.argv[1]
  modi = sys.argv[3]
  vr = sys.argv[2]
 
-inputFilePath = '/global/cfs/projectdirs/m3522/cmip6/STAR-ESDM/ssp245/downscaled.ACCESS-CM2.r1i1p1f1.pr.ssp245.gn.nclimgrid.star.1950.2100.tllc.nc'
+#inputFilePath = '/global/cfs/projectdirs/m3522/cmip6/STAR-ESDM/ssp245/downscaled.ACCESS-CM2.r1i1p1f1.pr.ssp245.gn.nclimgrid.star.1950.2100.tllc.nc'
+inputFilePath = '/global/cfs/projectdirs/m3522/cmip6/STAR-ESDM/ssp245/downscaled.MIROC6.r1i1p1f1.pr.ssp245.gn.nclimgrid.star.1950.2100.tllc.nc'
+vr = 'pr'
 
 if vr == 'pr':
  inputVarName = 'pr'
@@ -108,7 +110,7 @@ for mod in mods:
      values  = np.array(d[:],np.float32)
      cmor.set_variable_attribute(varid,'valid_min','f',2.0)
      cmor.set_variable_attribute(varid,'valid_max','f',3.0)
-     cmor.set_deflate(varid,1,1,1) ; # shuffle=1,deflate=1,deflate_level=1 - Deflate options compress file data
+     cmor.set_deflate(varid,0,0,0) ; # shuffle=1,deflate=1,deflate_level=1 - Deflate options compress file data
      cmor.write(varid,values,len(time)) ; # Write variable with time axis
      cmor.close()
      f.close()
