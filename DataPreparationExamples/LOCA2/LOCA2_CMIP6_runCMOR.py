@@ -11,6 +11,7 @@ from datetime import datetime
 # PJG  10142024 Generalized to all CMIP mods
 # PJG  10302024 Modifying global atts 
 # PJG  11052024 added inputs to run via GNU parallel
+# PJG  02052025 added if for LOCA2-1 version of 'pr'
 
 multi  = True 
 if multi == True:
@@ -25,7 +26,12 @@ if multi == True:
 
 cmorTable = '../Tables/Downscaling_Aday.json'
 inputJson = 'LOCA2_CMIP6_input.json'
+
 inputFilePath = '/global/cfs/projectdirs/m3522/cmip6/LOCA2/*/0p0625deg/r1i1p1f1/historical/' + vari + '/*v2022*.nc'  #v20220519.nc'
+
+if vari == 'pr':  # LOCA2.1   
+ inputFilePath = '/global/cfs/projectdirs/m3522/cmip6/LOCA2/*/0p0625deg/r1i1p1f1/historical/' + vari + '/*v20240915*.nc' 
+
 
 def extract_date(ds):   # preprocessing function when opening multiple files
     for var in ds.variables:
