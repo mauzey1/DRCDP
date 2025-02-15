@@ -8,9 +8,22 @@
             "source_version_number":"2.0"
         },
         "LOCA2-1":{
+            "downscaling_institution_id":"UCSD-SIO",
+            "downscaling_source_id":"LOCA2-1",
+            "driving_activity_id":"CMIP",
+            "driving_experiment_id":"historical",
+            "driving_mip_era":"CMIP6",
+            "driving_source_id":"ACCESS-CM2",
+            "driving_variant_label":"r1i1p1f1",
+            "grid":"5 x 5 km latitude x longitude",
+            "grid_label":"gn",
             "institution_id":"UCSD-SIO",
             "license":"CC BY 4.0",
+            "nominal_resolution":"5 km",
+            "product":"downscaled-statistical",
             "region":"NAM",
+            "region_id":"NAM",
+            "source":"placeholder",
             "source_name":"LOCA",
             "source_version_number":"2.1"
         },

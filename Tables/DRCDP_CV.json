@@ -1,0 +1,147 @@
+{
+    "CV":{
+        "activity_id":"DRCDP",
+        "frequency":{
+            "day":"daily mean samples"
+        },
+        "grid_label":{
+            "gn":"data reported on the analysis-native grid"
+        },
+        "institution_id":{
+            "TTU":{
+                "name":"Texas Tech University, 2520 Broadway Avenue, Lubbock, TX 79409, USA",
+                "ror":"0405mnx93",
+                "url":"https://www.ttu.edu/"
+            },
+            "UCM-SNRI":{
+                "name":"Sierra Nevada Research Institute, University of California, Merced, 5200 N. Lake Road, Merced, CA 95343, USA",
+                "ror":"00d9ah105",
+                "url":"https://www.climatologylab.org"
+            },
+            "UCSD-SIO":{
+                "name":"Scripps Institution of Oceanography, University of California, San Diego, 9500 Gilman Drive, La Jolla, CA 92093, USA",
+                "ror":"04v7hvq31",
+                "url":"https://scripps.ucsd.edu"
+            }
+        },
+        "license":{
+            "license":"DRDCP data produced by <Your Institution; see DRDCP_institution_id.json> is licensed under a <Creative Commons; select and insert a license_id; see below> License (<insert the matching license_url; see below>). Consult https://pcmdi.llnl.gov/CMIP6/TermsOfUse for terms of use governing DRDCP output, including citation requirements and proper acknowledgment. The data producers and data providers make no warranty, either express or implied, including, but not limited to, warranties of merchantability and fitness for a particular purpose. All liabilities arising from the supply of the information (including any liability arising in negligence) are excluded to the fullest extent permitted by law.",
+            "license_options":{
+                "CC BY 4.0":{
+                    "license_id":"Creative Commons Attribution 4.0 International",
+                    "license_url":"https://creativecommons.org/licenses/by/4.0/"
+                },
+                "CC0 1.0":{
+                    "license_id":"Creative Commons CC0 1.0 Universal Public Domain Dedication",
+                    "license_url":"https://creativecommons.org/publicdomain/zero/1.0/"
+                }
+            }
+        },
+        "nominal_resolution":{
+            "0.5 km":"Resolution of 0.5 km",
+            "1 km":"Resolution of 1 km",
+            "10 km":"Resolution of 10 km",
+            "100 km":"Resolution of 100 km",
+            "1000 km":"Resolution of 1000 km",
+            "10000 km":"Resolution of 10000 km",
+            "1x1 degree":"Resolution of 1x1 degree",
+            "2.5 km":"Resolution of 2.5 km",
+            "25 km":"Resolution of 25 km",
+            "250 km":"Resolution of 250 km",
+            "2500 km":"Resolution of 2500 km",
+            "5 km":"Resolution of 5 km",
+            "50 km":"Resolution of 50 km",
+            "500 km":"Resolution of 500 km",
+            "5000 km":"Resolution of 5000 km"
+        },
+        "product":[
+            "downscaled-dynamical",
+            "downscaled-statistical"
+        ],
+        "realm":{
+            "atmos":"Atmosphere",
+            "land":"Land Surface and Subsurface"
+        },
+        "region":{
+            "NAM":"north_america"
+        },
+        "required_global_attributes":[
+            "Conventions",
+            "activity_id",
+            "calendar",
+            "contact",
+            "creation_date",
+            "data_specs_version",
+            "downscaling_institution_id",
+            "downscaling_source_id",
+            "driving_activity_id",
+            "driving_experiment_id",
+            "driving_mip_era",
+            "driving_source_id",
+            "driving_variant_label",
+            "frequency",
+            "grid",
+            "grid_label",
+            "license",
+            "nominal_resolution",
+            "product",
+            "realm",
+            "region",
+            "region_id",
+            "table_id",
+            "tracking_id",
+            "variable_id",
+            "variant_info",
+            "variant_label"
+        ],
+        "source_id":{
+            "LOCA2-0":{
+                "institution_id":"UCSD-SIO",
+                "license":"CC BY 4.0",
+                "region":"NAM",
+                "source_name":"LOCA",
+                "source_version_number":"2.0"
+            },
+            "LOCA2-1":{
+                "downscaling_institution_id":"UCSD-SIO",
+                "downscaling_source_id":"LOCA2-1",
+                "driving_activity_id":"CMIP",
+                "driving_experiment_id":"historical",
+                "driving_mip_era":"CMIP6",
+                "driving_source_id":"ACCESS-CM2",
+                "driving_variant_label":"r1i1p1f1",
+                "grid":"5 x 5 km latitude x longitude",
+                "grid_label":"gn",
+                "institution_id":"UCSD-SIO",
+                "license":"CC BY 4.0",
+                "nominal_resolution":"5 km",
+                "product":"downscaled-statistical",
+                "region":"NAM",
+                "region_id":"NAM",
+                "source":"placeholder",
+                "source_name":"LOCA",
+                "source_version_number":"2.1"
+            },
+            "MACA3-0":{
+                "institution_id":"UCM-SNRI",
+                "license":"CC0 1.0",
+                "region":"NAM",
+                "source_name":"MACA",
+                "source_version_number":"3.0"
+            },
+            "STAR-ESDM1-0":{
+                "institution_id":"TTU",
+                "license":"CC BY 4.0",
+                "region":"NAM",
+                "source_name":"STAR-ESDM",
+                "source_version_number":"1.0"
+            }
+        },
+        "table_id":[
+            "APday"
+        ],
+        "tracking_id":[
+            "hdl:21.14100/.*"
+        ]
+    }
+}
