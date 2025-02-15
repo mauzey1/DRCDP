@@ -1,0 +1,90 @@
+{
+    "Header":{
+        "Conventions":"CF-1.7 CMIP-6.5",
+        "approx_interval":1.0,
+        "cmor_version":"3.9.0",
+        "data_specs_version":"6.5.0.0; mip-cmor-tables; f42386929a0057ed15e66a3bac045b8c00d33c0f",
+        "generic_levels":"",
+        "int_missing_value":"-999",
+        "missing_value":"1e20",
+        "product":"DRCDP",
+        "table_date":"2025-02-15",
+        "table_id":"APday"
+    },
+    "variable_entry":{
+        "pr":{
+            "cell_measures":"area: areacella",
+            "cell_methods":"area: time: mean",
+            "comment":"includes both liquid and solid phases",
+            "dimensions":[
+                "longitude",
+                "latitude",
+                "time"
+            ],
+            "frequency":"day",
+            "long_name":"Precipitation",
+            "modeling_realm":[
+                "atmos"
+            ],
+            "ok_max_mean_abs":"",
+            "ok_min_mean_abs":"",
+            "out_name":"pr",
+            "positive":"",
+            "standard_name":"precipitation_flux",
+            "type":"real",
+            "units":"kg m-2 s-1",
+            "valid_max":"",
+            "valid_min":""
+        },
+        "tasmax":{
+            "cell_measures":"area: areacella",
+            "cell_methods":"area: mean time: maximum",
+            "comment":"maximum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: max')",
+            "dimensions":[
+                "longitude",
+                "latitude",
+                "time",
+                "height2m"
+            ],
+            "frequency":"day",
+            "long_name":"Daily Maximum Near-Surface Air Temperature",
+            "modeling_realm":[
+                "atmos"
+            ],
+            "ok_max_mean_abs":"",
+            "ok_min_mean_abs":"",
+            "out_name":"tasmax",
+            "positive":"",
+            "standard_name":"air_temperature",
+            "type":"real",
+            "units":"K",
+            "valid_max":"",
+            "valid_min":""
+        },
+        "tasmin":{
+            "cell_measures":"area: areacella",
+            "cell_methods":"area: mean time: minimum",
+            "comment":"minimum near-surface (usually, 2 meter) air temperature (add cell_method attribute 'time: min')",
+            "dimensions":[
+                "longitude",
+                "latitude",
+                "time",
+                "height2m"
+            ],
+            "frequency":"day",
+            "long_name":"Daily Minimum Near-Surface Air Temperature",
+            "modeling_realm":[
+                "atmos"
+            ],
+            "ok_max_mean_abs":"",
+            "ok_min_mean_abs":"",
+            "out_name":"tasmin",
+            "positive":"",
+            "standard_name":"air_temperature",
+            "type":"real",
+            "units":"K",
+            "valid_max":"",
+            "valid_min":""
+        }
+    }
+}
