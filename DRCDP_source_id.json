@@ -1,0 +1,32 @@
+{
+    "source_id":{
+        "LOCA2-0":{
+            "institution_id":"UCSD-SIO",
+            "license":"CC BY 4.0",
+            "region":"NAM",
+            "source_name":"LOCA",
+            "source_version_number":"2.0"
+        },
+        "LOCA2-1":{
+            "institution_id":"UCSD-SIO",
+            "license":"CC BY 4.0",
+            "region":"NAM",
+            "source_name":"LOCA",
+            "source_version_number":"2.1"
+        },
+        "MACA3-0":{
+            "institution_id":"UCM-SNRI",
+            "license":"CC0 1.0",
+            "region":"NAM",
+            "source_name":"MACA",
+            "source_version_number":"3.0"
+        },
+        "STAR-ESDM1-0":{
+            "institution_id":"TTU",
+            "license":"CC BY 4.0",
+            "region":"NAM",
+            "source_name":"STAR-ESDM",
+            "source_version_number":"1.0"
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "institution_id":{
+        "TTU":{
+            "name":"Texas Tech University, 2520 Broadway Avenue, Lubbock, TX 79409, USA",
+            "ror":"0405mnx93",
+            "url":"https://www.ttu.edu/"
+        },
+        "UCM-SNRI":{
+            "name":"Sierra Nevada Research Institute, University of California, Merced, 5200 N. Lake Road, Merced, CA 95343, USA",
+            "ror":"00d9ah105",
+            "url":"https://www.climatologylab.org"
+        },
+        "UCSD-SIO":{
+            "name":"Scripps Institution of Oceanography, University of California, San Diego, 9500 Gilman Drive, La Jolla, CA 92093, USA",
+            "ror":"04v7hvq31",
+            "url":"https://scripps.ucsd.edu"
+        }
+    }
+}
