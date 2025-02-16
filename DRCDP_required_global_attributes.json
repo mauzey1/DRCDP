@@ -6,8 +6,6 @@
         "contact",
         "creation_date",
         "data_specs_version",
-        "downscaling_institution_id",
-        "downscaling_source_id",
         "driving_activity_id",
         "driving_experiment_id",
         "driving_mip_era",

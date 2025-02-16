@@ -3,33 +3,33 @@
         "LOCA2-0":{
             "institution_id":"UCSD-SIO",
             "license":"CC BY 4.0",
+            "reference":"Pierce, David W., Daniel R. Cayan, and Bridget L. Thrasher (2014) Statistical downscaling using Localized Constructed Analogs (LOCA). Journal of Hydrometeorology, 15 (6), pp 2558-2585. https://doi.org/10.1175/JHM-D-14-0082.1",
             "region":"NAM",
             "source_name":"LOCA",
             "source_version_number":"2.0"
         },
         "LOCA2-1":{
-            "downscaling_institution_id":"UCSD-SIO",
-            "downscaling_source_id":"LOCA2-1",
-            "driving_activity_id":"CMIP",
-            "driving_experiment_id":"historical",
-            "driving_mip_era":"CMIP6",
-            "driving_source_id":"ACCESS-CM2",
-            "driving_variant_label":"r1i1p1f1",
+            "calendar":"gregorian",
+            "contact":"Daniel Feldman; DRFeldman@lbl.gov",
+            "further_info_url":"https://loca.ucsd.edu/",
             "grid":"5 x 5 km latitude x longitude",
             "grid_label":"gn",
             "institution_id":"UCSD-SIO",
             "license":"CC BY 4.0",
             "nominal_resolution":"5 km",
             "product":"downscaled-statistical",
-            "region":"NAM",
+            "reference":"Pierce, David W., Daniel R. Cayan, and Bridget L. Thrasher (2014) Statistical downscaling using Localized Constructed Analogs (LOCA). Journal of Hydrometeorology, 15 (6), pp 2558-2585. https://doi.org/10.1175/JHM-D-14-0082.1",
+            "region":"north_america",
             "region_id":"NAM",
-            "source":"placeholder",
+            "source":"LOCA 2.1: Statistically-downscaled climate model projections based on CMIP6",
             "source_name":"LOCA",
-            "source_version_number":"2.1"
+            "source_version_number":"2.1",
+            "title":"LOCA 2.1 dataset prepared for DRCDP"
         },
         "MACA3-0":{
             "institution_id":"UCM-SNRI",
             "license":"CC0 1.0",
+            "reference":"",
             "region":"NAM",
             "source_name":"MACA",
             "source_version_number":"3.0"
@@ -37,6 +37,7 @@
         "STAR-ESDM1-0":{
             "institution_id":"TTU",
             "license":"CC BY 4.0",
+            "reference":"Hayhoe, K., Scott-Fleming, I., Stoner, A., and Wuebbles, D. J. (2024) STAR-ESDM: A generalizable approach to generating high-resolution climate projections through signal decomposition. Earth's Future, 12, e2023EF004107. https://doi.org/10.1029/2023EF004107",
             "region":"NAM",
             "source_name":"STAR-ESDM",
             "source_version_number":"1.0"

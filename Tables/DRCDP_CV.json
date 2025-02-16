@@ -1,5 +1,11 @@
 {
     "CV":{
+        "DRS":{
+            "directory_path_example":"DRCDP/NAM/UCSD-SIO/LOCA2-1/CMIP6/CMIP/historical/ACCESS-CM2/r1i1p1f1/day/tasmax/v20250216",
+            "directory_path_template":"<activity_id><region_id><institution_id><source_id><driving_mip_era><driving_activity_id><driving_experiment_id><driving_source_id><driving_variant_label><frequency><variable_id><version>",
+            "filename_example":"tasmax_NAM_UCSD-SIO_LOCA2-1_PCMDI_CMIP6_historical_ACCESS-CM2_r1i1p1f1_day_19500102-19500131.nc",
+            "filename_template":"<variable_id><region_id><institution_id><source_id><variant_label><driving_mip_era><driving_experiment_id><driving_source_id><driving_variant_label><frequency>"
+        },
         "activity_id":"DRCDP",
         "frequency":{
             "day":"daily mean samples"
@@ -9,19 +15,22 @@
         },
         "institution_id":{
             "TTU":{
-                "name":"Texas Tech University, 2520 Broadway Avenue, Lubbock, TX 79409, USA",
-                "ror":"0405mnx93",
-                "url":"https://www.ttu.edu/"
+                "ROR":"0405mnx93",
+                "URL":"https://www.ttu.edu/",
+                "contact":"Katharine Hayhoe; katharine.hayhoe@ttu.edu",
+                "name":"Texas Tech University, 2520 Broadway Avenue, Lubbock, TX 79409, USA"
             },
             "UCM-SNRI":{
-                "name":"Sierra Nevada Research Institute, University of California, Merced, 5200 N. Lake Road, Merced, CA 95343, USA",
-                "ror":"00d9ah105",
-                "url":"https://www.climatologylab.org"
+                "ROR":"00d9ah105",
+                "URL":"https://www.climatologylab.org",
+                "contact":"John T. Abatzoglou; jabatzoglou@ucmerced.edu",
+                "name":"Sierra Nevada Research Institute, University of California, Merced, 5200 N. Lake Road, Merced, CA 95343, USA"
             },
             "UCSD-SIO":{
-                "name":"Scripps Institution of Oceanography, University of California, San Diego, 9500 Gilman Drive, La Jolla, CA 92093, USA",
-                "ror":"04v7hvq31",
-                "url":"https://scripps.ucsd.edu"
+                "ROR":"04v7hvq31",
+                "URL":"https://scripps.ucsd.edu",
+                "contact":"Daniel Feldman; DRFeldman@lbl.gov",
+                "name":"Scripps Institution of Oceanography, University of California, San Diego, 9500 Gilman Drive, La Jolla, CA 92093, USA"
             }
         },
         "license":{
@@ -72,8 +81,6 @@
             "contact",
             "creation_date",
             "data_specs_version",
-            "downscaling_institution_id",
-            "downscaling_source_id",
             "driving_activity_id",
             "driving_experiment_id",
             "driving_mip_era",
@@ -98,33 +105,33 @@
             "LOCA2-0":{
                 "institution_id":"UCSD-SIO",
                 "license":"CC BY 4.0",
+                "reference":"Pierce, David W., Daniel R. Cayan, and Bridget L. Thrasher (2014) Statistical downscaling using Localized Constructed Analogs (LOCA). Journal of Hydrometeorology, 15 (6), pp 2558-2585. https://doi.org/10.1175/JHM-D-14-0082.1",
                 "region":"NAM",
                 "source_name":"LOCA",
                 "source_version_number":"2.0"
             },
             "LOCA2-1":{
-                "downscaling_institution_id":"UCSD-SIO",
-                "downscaling_source_id":"LOCA2-1",
-                "driving_activity_id":"CMIP",
-                "driving_experiment_id":"historical",
-                "driving_mip_era":"CMIP6",
-                "driving_source_id":"ACCESS-CM2",
-                "driving_variant_label":"r1i1p1f1",
+                "calendar":"gregorian",
+                "contact":"Daniel Feldman; DRFeldman@lbl.gov",
+                "further_info_url":"https://loca.ucsd.edu/",
                 "grid":"5 x 5 km latitude x longitude",
                 "grid_label":"gn",
                 "institution_id":"UCSD-SIO",
                 "license":"CC BY 4.0",
                 "nominal_resolution":"5 km",
                 "product":"downscaled-statistical",
-                "region":"NAM",
+                "reference":"Pierce, David W., Daniel R. Cayan, and Bridget L. Thrasher (2014) Statistical downscaling using Localized Constructed Analogs (LOCA). Journal of Hydrometeorology, 15 (6), pp 2558-2585. https://doi.org/10.1175/JHM-D-14-0082.1",
+                "region":"north_america",
                 "region_id":"NAM",
-                "source":"placeholder",
+                "source":"LOCA 2.1: Statistically-downscaled climate model projections based on CMIP6",
                 "source_name":"LOCA",
-                "source_version_number":"2.1"
+                "source_version_number":"2.1",
+                "title":"LOCA 2.1 dataset prepared for DRCDP"
             },
             "MACA3-0":{
                 "institution_id":"UCM-SNRI",
                 "license":"CC0 1.0",
+                "reference":"",
                 "region":"NAM",
                 "source_name":"MACA",
                 "source_version_number":"3.0"
@@ -132,6 +139,7 @@
             "STAR-ESDM1-0":{
                 "institution_id":"TTU",
                 "license":"CC BY 4.0",
+                "reference":"Hayhoe, K., Scott-Fleming, I., Stoner, A., and Wuebbles, D. J. (2024) STAR-ESDM: A generalizable approach to generating high-resolution climate projections through signal decomposition. Earth's Future, 12, e2023EF004107. https://doi.org/10.1029/2023EF004107",
                 "region":"NAM",
                 "source_name":"STAR-ESDM",
                 "source_version_number":"1.0"
