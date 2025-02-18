@@ -22,8 +22,6 @@
         "region_id",
         "table_id",
         "tracking_id",
-        "variable_id",
-        "variant_info",
-        "variant_label"
+        "variable_id"
     ]
 }
