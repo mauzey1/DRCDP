@@ -10,7 +10,7 @@
 
     "#comment": "The following are DRCDP project specific settings and should not be user edited",
     "tracking_prefix": "hdl:21.14100",
-    "output_file_template": "<variable_id><region_id><institution_id><source_id><variant_label><driving_mip_era><driving_experiment_id><driving_source_id><driving_variant_label><frequency>",
+    "output_file_template": "<variable_id><region_id><institution_id><source_id><driving_mip_era><driving_experiment_id><driving_source_id><driving_variant_label><frequency>",
     "output_path_template": "<activity_id><region_id><institution_id><source_id><driving_mip_era><driving_activity_id><driving_experiment_id><driving_source_id><driving_variant_label><frequency><variable_id><version>",
     
     "#comment": "The following are CMOR internal settings and should not be user edited",
