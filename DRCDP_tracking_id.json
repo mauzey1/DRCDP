@@ -1,5 +1,5 @@
 {
-    "tracking_id":[
-        "hdl:21.14100/.*"
+    "tracking_id_prefix":[
+        "hdl:21.14100"
     ]
 }

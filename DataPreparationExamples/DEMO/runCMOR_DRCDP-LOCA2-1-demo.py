@@ -1,6 +1,16 @@
 import cmor
 import numpy as np
+import os
+import sys
 import xcdat as xc
+
+# %% Get current script path, append src dir
+current_dir = os.path.dirname(os.path.abspath(__file__))
+new_path = os.path.join(current_dir, "..", "..", "src")
+sys.path.append(new_path)
+from DRCDPLib import writeUserJson
+
+# %% start user input below
 
 cmorTable = "../../Tables/DRCDP_APday.json"  # APday, APmon,LPday, LPmon - Load target table, axis info (coordinates, grid*) and CVs
 inputJson = "DRCDP-LOCA2-1-demo_user_input.json"  # Update contents of this file to set your global_attributes
@@ -24,7 +34,9 @@ d = np.where(np.isnan(d), 1.0e20, d)
 cmor.setup(
     inpath="./", netcdf_file_action=cmor.CMOR_REPLACE_4
 )  # ,logfile='cmorLog.txt')
-cmor.dataset_json(inputJson)
+cmor.dataset_json(
+    writeUserJson(inputJson, cmorTable)
+)  # use function to add CMOR and DRCDP required arguments
 cmor.load_table(cmorTable)
 
 # Create CMOR axes
@@ -46,7 +58,9 @@ values = np.array(d, np.float32)[:]
 # cmor.set_variable_attribute(varid,'valid_max','f',3.0)
 
 # Prepare variable (compression settings), write and close file - see https://cmor.llnl.gov/mydoc_cmor3_api/#cmor_set_variable_attribute
-cmor.set_deflate(varid, 1, 1, 1)  # shuffle=1,deflate=1,deflate_level=1 - Deflate options compress file data
+cmor.set_deflate(
+    varid, 1, 1, 1
+)  # shuffle=1,deflate=1,deflate_level=1 - Deflate options compress file data
 cmor.write(varid, d, len(time))
 cmor.close()
 f.close()
