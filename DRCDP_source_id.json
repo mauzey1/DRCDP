@@ -15,7 +15,7 @@
             "region_id":"NAM",
             "source":"LOCA 2.0: Statistically-downscaled climate model projections based on CMIP6",
             "source_name":"LOCA",
-            "source_version_number":"2.0",
+            "source_version":"2.0",
             "title":"LOCA 2.0 dataset prepared for DRCDP"
         },
         "LOCA2-1":{
@@ -33,7 +33,7 @@
             "region_id":"NAM",
             "source":"LOCA 2.1: Statistically-downscaled climate model projections based on CMIP6",
             "source_name":"LOCA",
-            "source_version_number":"2.1",
+            "source_version":"2.1",
             "title":"LOCA 2.1 dataset prepared for DRCDP"
         },
         "MACA3-0":{
@@ -51,7 +51,7 @@
             "region_id":"NAM",
             "source":"MACA 3.0: Statistically-downscaled climate model projections based on CMIP6",
             "source_name":"MACA",
-            "source_version_number":"3.0",
+            "source_version":"3.0",
             "title":"MACA 3.0 dataset prepared for DRCDP"
         },
         "STAR-ESDM1-0":{
@@ -69,7 +69,7 @@
             "region_id":"NAM",
             "source":"STAR-ESDM 1.0: Statistically-downscaled climate model projections based on CMIP6",
             "source_name":"STAR-ESDM",
-            "source_version_number":"1.0",
+            "source_version":"1.0",
             "title":"STAR-ESDM 1.0 dataset prepared for DRCDP"
         }
     }
