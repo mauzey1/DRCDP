@@ -6,7 +6,13 @@ import numpy as np
 import sys, os, glob
 from datetime import datetime
 
-cmorTable = '../Tables/obs4MIPs_Aday.json'
+# %% Get current script path, append src dir
+current_dir = os.path.dirname(os.path.abspath(__file__))
+new_path = os.path.join(current_dir, "..", "..", "src")
+sys.path.append(new_path)
+from DRCDPLib import writeUserJson
+
+cmorTable = '../../Tables/DRCDP_APday.json'
 inputJson = 'STAR-ESDM_CMIP6_input.json'
 
 multi  = False #True
@@ -88,7 +94,7 @@ for mod in mods:
      cmor.load_table(cmorTable)
 
 # SET CMIP MODEL SPECIFIC ATTRIBUTES 
-     cmor.set_cur_dataset_attribute("source_id","STAR-ESDM-v0--" + mod)
+#    cmor.set_cur_dataset_attribute("source_id","STAR-ESDM-v0--" + mod)
      cmor.set_cur_dataset_attribute("driving_source_id",mod)
      cmor.set_cur_dataset_attribute("driving_variant_label",ri)
      cmor.set_cur_dataset_attribute("driving_experiment_id",exp)

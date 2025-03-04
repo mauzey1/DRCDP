@@ -126,6 +126,8 @@ for mod in mods:
     cmor.set_cur_dataset_attribute("driving_source_id",mod)
     cmor.set_cur_dataset_attribute("driving_variant_label",ri)
     cmor.set_cur_dataset_attribute("driving_experiment_id",exp)
+    if expi in ['historical']: cmor.set_cur_dataset_attribute("driving_activity_id",'CMIP')
+    if expi in ['ssp245','ssp585']: cmor.set_cur_dataset_attribute("driving_activity_id",'ScenarioMIP')
 
 # Create CMOR axes
     cmorLat = cmor.axis("latitude", coord_vals=lat[:], cell_bounds=f.lat_bnds.values, units="degrees_north")
