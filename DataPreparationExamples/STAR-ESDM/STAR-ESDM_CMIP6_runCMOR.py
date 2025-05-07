@@ -104,15 +104,12 @@ for mod in mods:
 
 # For more information see https://cmor.llnl.gov/mydoc_cmor3_api/
      cmor.setup(inpath='./',netcdf_file_action=cmor.CMOR_REPLACE_4,logfile=exp + '-' + mod + '-' + ri + '-'+ 'cmorLog.txt')
-#    cmor.dataset_json(inputJson)
      cmor.dataset_json(writeUserJson(inputJson, cmorTable))
      cmor.load_table(cmorTable)
 
 # SET CMIP MODEL SPECIFIC ATTRIBUTES 
-#    cmor.set_cur_dataset_attribute("source_id","STAR-ESDM-v0--" + mod)
      cmor.set_cur_dataset_attribute("driving_source_id",mod)
      cmor.set_cur_dataset_attribute("driving_variant_label",ri)
-#    cmor.set_cur_dataset_attribute("driving_experiment_id",exp)
      cmor.set_cur_dataset_attribute("driving_experiment_id",'historical-' + exp)
      cmor.set_cur_dataset_attribute("driving_grid_label",grid_label)
 
@@ -132,7 +129,7 @@ for mod in mods:
 # Setup units and create variable to write using cmor - see https://cmor.llnl.gov/mydoc_cmor3_api/#cmor_set_variable_attribute
      varid   = cmor.variable(outputVarName,outputUnits,cmoraxes,missing_value=1.e20)
      values  = np.array(d[:],np.float32)
-     cmor.set_deflate(varid,0,0,0) ; # shuffle=1,deflate=1,deflate_level=1 - Deflate options compress file data
+     cmor.set_deflate(varid,1,1,1) # shuffle=1,deflate=1,deflate_level=1 - Deflate options compress file data
      cmor.write(varid,values,len(time)) ; # Write variable with time axis
      cmor.close()
      f.close()
