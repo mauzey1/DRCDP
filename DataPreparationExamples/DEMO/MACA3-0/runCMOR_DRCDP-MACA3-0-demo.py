@@ -4,9 +4,7 @@ import sys
 import numpy as np
 import xcdat as xc
 
-# %% Notes
-# to-do
-# add  "Header":{ ... "table_id": "Table grids", to ../../Tables/DRCDP_grids.json
+# %% Notes - to-do
 
 # %% Get current script path, append src dir
 current_dir = os.path.dirname(os.path.abspath(__file__))

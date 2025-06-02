@@ -1,8 +1,8 @@
 import cmor
 import os
 import sys
-import xcdat as xc
 import numpy as np
+import xcdat as xc
 
 # %% Get current script path, append src dir
 current_dir = os.path.dirname(os.path.abspath(__file__))
