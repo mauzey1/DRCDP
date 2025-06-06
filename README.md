@@ -17,7 +17,7 @@ The repository content has been collected from many contributors. The structure 
 
 This work is sponsored by the Regional and Global Model Analysis ([RGMA](https://climatemodeling.science.energy.gov/program/regional-global-model-analysis)) program of the Earth and Environmental Systems Sciences Division ([EESSD](https://science.osti.gov/ber/Research/eessd)) in the Office of Biological and Environmental Research ([BER](https://science.osti.gov/ber)) within the Department of Energy's ([DOE](https://www.energy.gov/)) Office of Science ([OS](https://science.osti.gov/)). The work at PCMDI is performed under the auspices of the U.S. Department of Energy by Lawrence Livermore National Laboratory under Contract DE-AC52-07NA27344.
 
-This work was also funded by a contract from the Environmental Security Technology Certification Program (ESTCP) under Project NH24-8916.
+This work was also funded by a contract from the Environmental Security Technology Certification Program ([ESTCP](https://serdp-estcp.mil/)) under Project NH24-8916.
 
 <p>
     <img src="https://pcmdi.github.io/assets/PCMDI/100px-PCMDI-Logo-NoText-square-png8.png"
