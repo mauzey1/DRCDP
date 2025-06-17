@@ -4,6 +4,8 @@ import sys
 import numpy as np
 import xcdat as xc
 
+# %% Notes - to-do
+
 # %% Get current script path, append src dir
 current_dir = os.path.dirname(os.path.abspath(__file__))
 new_path = os.path.join(current_dir, "..", "..", "..", "src")
@@ -32,7 +34,7 @@ d = np.where(np.isnan(d), 1.0e20, d)
 
 # Initialize and run CMOR. For more information see https://cmor.llnl.gov/mydoc_cmor3_api/
 cmor.setup(
-    inpath="./", netcdf_file_action=cmor.CMOR_REPLACE_4
+    inpath="../../../Tables", netcdf_file_action=cmor.CMOR_REPLACE_4
 )  # ,logfile='cmorLog.txt')
 cmor.dataset_json(
     writeUserJson(inputJson, cmorTable)
