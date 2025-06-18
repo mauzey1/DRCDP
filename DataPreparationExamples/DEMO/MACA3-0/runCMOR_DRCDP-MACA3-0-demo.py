@@ -80,7 +80,13 @@ cmorLat = cmor.axis(
 cmorLon = cmor.axis(
     "longitude", coord_vals=lon[:], cell_bounds=f.lon_bnds.values, units="degrees_east"
 )
-gridId = cmor.grid(axis_ids=[cmorLat, cmorLon], latitude=latGrid, longitude=lonGrid)
+latVerts = np.concatenate((np.flip(f.lat_bnds.values, axis=1), f.lat_bnds.values), axis=1)
+lonVerts = np.repeat(f.lon_bnds.values, 2, axis=1)
+latVertsGrid, lonVertsGrid = np.broadcast_arrays(
+    np.expand_dims(latVerts[:], 0), np.expand_dims(lonVerts[:], 1)
+)
+gridId = cmor.grid(axis_ids=[cmorLat, cmorLon], latitude=latGrid, longitude=lonGrid,
+                   latitude_vertices=latVertsGrid, longitude_vertices=lonVertsGrid)
 
 # Load CMOR tables
 cmor.load_table(cmorTable)
