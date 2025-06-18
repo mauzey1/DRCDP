@@ -46,32 +46,12 @@ cmor.set_table(gridTable)
 latGrid, lonGrid = np.broadcast_arrays(
     np.expand_dims(lat[:], 0), np.expand_dims(lon[:], 1)
 )
-crs_wkt = "".join(
-    [
-        'GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,',
-        '298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG",',
-        '"6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],',
-        'UNIT["degree",0.0174532925199433,AUTHORITY["EPSG","9122"]],',
-        'AUTHORITY["EPSG","4326"]]',
-    ]
-)
-crs_params = {
-    "grid_mapping_name": "latitude_longitude",
-    "longitude_of_prime_meridian": np.float64(0.0),
-    "semi_major_axis": np.float64(6378137.0),
-    "long_name": "WGS 84",
-    "inverse_flattening": np.float64(298.257223563),
-    "GeoTransform": "-179.5 0.1 0 74.5 0.1",
-    "crs_wkt": crs_wkt,
-}
-grid_params = {
-    "longitude_of_prime_meridian": [np.float64(0.0), "degrees_east"],
-    "semi_major_axis": {"value": np.float64(6378137.0), "units": "meters"},
-    "long_name": "WGS 84",
-    "inverse_flattening": (np.float64(298.257223563), ""),
-    "GeoTransform": "-179.5 0.1 0 74.5 0.1",
-    "crs_wkt": crs_wkt,
-}
+
+crs_params = f.coords['crs'].attrs
+for k, v in crs_params.items():
+    if isinstance(v, np.floating):
+        crs_params[k] = (v, "")
+crs_params['crs_wkt'] = crs_params.pop('spatial_ref')
 
 # Create CMOR spatial axes and grid
 cmorLat = cmor.axis(
@@ -100,7 +80,7 @@ cmorTime = cmor.axis("time", coord_vals=time[:], cell_bounds=tbds, units=f.time.
 cmor.set_crs(
     grid_id=gridId,
     mapping_name=crs_params["grid_mapping_name"],
-    parameter_names=grid_params,
+    parameter_names=crs_params,
 )
 
 # Create CMOR variable to write - see https://cmor.llnl.gov/mydoc_cmor3_api/#cmor_set_variable_attribute
