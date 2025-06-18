@@ -1,6 +1,6 @@
-# Decision Relevant Earth System Data Products
+# Decision Relevant Community Data Products (DRCDP)
 
-The need for actionable meteorological and hydrologic information continues to grow, as communities work to improve predictions and projections of the natural system and assess risks from weather hazards. Decision relevant data is indispensible to this need, providing data at the scales needed by a broad community of stakeholders, practitioners and other end-users.
+The need for actionable meteorological and hydrologic information continues to grow, as communities work to improve predictions and projections of the natural system and assess risks from weather hazards. Decision relevant Earth System data is indispensible to this need, providing data at the scales needed by a broad community of stakeholders, practitioners and other end-users.
 
 ### THIS REPOSITORY IS CURRENTLY UNDER ACTIVE DEVELOPMENT
 It will be used to document the status of the project, include guidance for dataset contributors, and manage critical metadata used to describe and deliver datasets.   
