@@ -1,5 +1,10 @@
 {
     "institution_id":{
+        "EPA":{
+            "URL":"https://www.epa.gov/",
+            "contact":"Megan Mallard; Mallard.Megan@epa.gov",
+            "name":"U.S. Environmental Protection Agency"
+        },
         "TTU":{
             "ROR":"0405mnx93",
             "URL":"https://www.ttu.edu/",
