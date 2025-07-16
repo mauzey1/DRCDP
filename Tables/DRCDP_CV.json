@@ -18,6 +18,7 @@
         },
         "institution_id":{
             "EPA":{
+                "ROR":"03tns0030",
                 "URL":"https://www.epa.gov/",
                 "contact":"Megan Mallard; Mallard.Megan@epa.gov",
                 "name":"U.S. Environmental Protection Agency"
