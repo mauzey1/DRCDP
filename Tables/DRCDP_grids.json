@@ -5,7 +5,7 @@
         "data_specs_version":"6.5.0.0; cmip6-cmor-tables; 30dbad3ea0785c760c621b02185025c69df4d314",
         "missing_value":"1e20",
         "product":"DRCDP",
-        "table_date":"2025-06-02",
+        "table_date":"2025-09-03",
         "table_id":"Table grids"
     },
     "axis_entry":{
